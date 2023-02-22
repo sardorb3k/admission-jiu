@@ -3,6 +3,13 @@ const nextConfig = {
   experimental: {
     appDir: true,
   },
-}
 
-module.exports = nextConfig
+  // middlewares: [
+  //   (req, res, next) => {
+  //     console.log("Incoming request:", req.url);
+  //     next();
+  //   },
+  // ],
+};
+
+module.exports = nextConfig;
