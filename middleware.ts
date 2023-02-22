@@ -17,7 +17,7 @@ export async function middleware(req: NextRequest) {
   }
   if (satifauth) {
     const API_URL = process.env.URL;
-    const data = await fetch(`${API_URL}/api/auth/me`, {
+    const data = await fetch(`https://admission-jiu-five.vercel.app/api/auth/me`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
